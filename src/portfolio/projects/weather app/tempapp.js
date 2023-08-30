@@ -9,8 +9,9 @@ function WeatherApp() {
 
   useEffect(() => {
     const fetchWeather = async () => {
+      const apiKey=process.env.REACT_APP_API_KEY;
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=5106b61ae42864e5137222c883100487`
+        `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}`
       );
       if (componentMounted) {
         setData(await response.json());

@@ -1,0 +1,72 @@
+.contact-content{
+    padding: 84px;
+    color: white;
+    display:flex;
+    margin-top: -112px;
+    padding: 140px 84px;
+    background: url(../portfolio/portfolio\ images/bg-1.jpeg) no-repeat center center/cover;
+}
+.contact-link{
+    color: #fff;
+    text-decoration: inherit;
+  }
+  .contact-link:hover{
+    color:blue;
+    text-decoration: underline;
+  }
+  
+  /* Animation for entering from the left */
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for entering from the right */
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .heading{
+    margin-top:38px;
+  }
+  .heading div{
+    padding-left: 50px; 
+  }
+  .gmail-img{
+    height: 30px; 
+    width: 30px; 
+    margin-right: 20px;
+  }
+  .linkedin-img{
+    height: 30px; 
+    width: 30px; 
+    margin-right: 20px;
+  }
+  .git-img{
+    height: 30px;
+    width: 30px; 
+    margin-right: 20px;
+  }
+  .insta-img{
+    height: 30px; 
+    width: 30px; 
+    margin-right: 20px;
+  }
+  .contact-img{
+    height:450px;
+    width:450px;
+    margin-left:225px;
+    border-radius:15px;
+  }

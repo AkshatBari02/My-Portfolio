@@ -13,7 +13,11 @@ function CountdownTimer() {
     const newSecs = parseInt(prompt("Enter seconds"));
     setMins(newMins);
     setSecs(newSecs);
-    setDisplayTime(`${newMins.toString().padStart(2, "0")}:${newSecs.toString().padStart(2, "0")}`);
+    setDisplayTime(
+      `${newMins.toString().padStart(2, "0")}:${newSecs
+        .toString()
+        .padStart(2, "0")}`
+    );
   }
 
   function startTimer() {
@@ -26,7 +30,9 @@ function CountdownTimer() {
       if (currentTime >= 0) {
         const minutes = Math.floor(currentTime / 60);
         const seconds = currentTime % 60;
-        const formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+        const formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds
+          .toString()
+          .padStart(2, "0")}`;
         setDisplayTime(formattedTime);
       } else {
         clearInterval(interval);
@@ -40,34 +46,40 @@ function CountdownTimer() {
     clearInterval(interval);
     audioRef.current.pause();
     audioRef.current.currentTime = 0;
-    setDisplayTime("Timer stopped");
+    // setDisplayTime("Timer stopped");
   }
 
   return (
-    <div className="timer">
+    <div className="clock-timer clock-body">
       <div className="clock-top">
-        <div className="circle"></div>
-        <div className="circle"></div>
+        <div className="clock-circle"></div>
+        <div className="clock-circle"></div>
       </div>
 
-      <div className="container">
-        <span className="emoji">&#128512;</span>
-        <div className="tik">
-          <div className="hand"></div>
+      <div className="clock-container">
+        <span className="clock-emoji">&#128512;</span>
+        <div className="clock-tik">
+          <div className="clock-hand"></div>
         </div>
-        <div className="txt">
-          <h2>Timer</h2>
-          <h2 id="displayTime">{displayTime}</h2>
-          <audio src={"https://www.pagalworld.com.se/files/download/id/67317"} type="audio/mp3" ref={audioRef}></audio>
-          <div className="btn">
-            <button type="button" onClick={startTimer} className="btn-p">
+        <div className="clock-txt">
+          <h2 className="clock-txt-h2">Timer</h2>
+          <h2 id="clockDisplayTime" className="clock-txt-h2">
+            {displayTime}
+          </h2>
+          <audio
+            src={"https://www.pagalworld.com.se/files/download/id/67290"}
+            type="audio/mp3"
+            ref={audioRef}
+          ></audio>
+          <div className="clock-btn">
+            <button type="button" onClick={startTimer} className="clock-btn-p">
               Start
             </button>
-            <button type="button" onClick={setTime} className="btn-p">
+            <button type="button" onClick={setTime} className="clock-btn-p">
               Set Time
             </button>
-            <button type="button" onClick={stopTimer} className="btn-p">
-              Pause
+            <button type="button" onClick={stopTimer} className="clock-btn-p">
+              Silent
             </button>
           </div>
         </div>

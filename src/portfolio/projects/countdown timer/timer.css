@@ -1,8 +1,6 @@
-body{
-    background-color: black;
-}
-.container{
-    padding: 5px 80px;
+
+.clock-container{
+    padding: 34px 41px;
     justify-content: center !important;
     align-items: center !important;
     background-color: bisque;
@@ -13,30 +11,30 @@ body{
     margin: -6% 37%;
     box-shadow: 10px 15px 15px gray;
 }
-.btn-p:hover{
+.clock-btn-p:hover{
     background-color: blue !important;
     color: white !important;
-    font-size:1.1rem !important;
     cursor: pointer !important;
+    text-decoration: none !important;
 }
-.hand{
+.clock-hand{
     width: 10px;
-    height: 130px;
-    margin-top: -56%;
-    margin-left: 45%;
+    height: 150px;
+    margin-top: -37%;
+    /* margin-left: 45%; */
     background-color: red;
 }
-#displayTime{
-    padding: 0px 60px;
+#clockDisplayTime{
+    padding: 0px 93px;
     margin-top: -7px;
 }
-h1{
+.clock-h1{
     padding: 0px 55px;
 }
-.tik{
+.clock-tik{
     width: 10px;
-    height: 130px;
-    margin: 29px 90px;
+    height: 169px;
+    margin: 57px 112px;
     animation-name: timing;
     animation-duration: 60s;
     animation-iteration-count: infinite;
@@ -52,37 +50,37 @@ h1{
         transform: rotate(360deg);
     }
 }
-.txt{
-    margin-top: -145px;
+.clock-txt{
+    margin-top: -227px;
 }
-.txt h2{
-    padding: 0px 63px;
+.clock-txt-h2{
+    padding: 0px 91px;
 }
-.btn{
-    margin-left: 10px;
+.clock-btn{
+    margin-left: 52px;
     position: relative !important;
 }
-.btn-p{
+.clock-btn-p{
     padding: 4px;
     border-radius: 8px;
 }
-.emoji{
-    padding: 0px 52px;
+.clock-emoji{
+    padding: 0px 90px;
     font-size: 58px;
 }
 .clock-top{
     display: flex; 
     justify-content: center; 
-    padding-top: 5px;
+    padding-top: 62px;
     position: relative; /* Add this to create a stacking context */
     z-index: 1; /* Raise the stacking context */
 }
-.circle{    
+.clock-circle{    
     background-color: brown;
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    margin: 0px 46px;
+    margin: 0px 2vw;
     position: relative;
     /* z-index: -1; */
     border: 8px solid white;
@@ -100,6 +98,9 @@ h1{
         90% {border:5px solid #bdb280;}
         100%{border:5px solid #39f;}
     }
-    .timer{
-        height:545px !important;
+    .clock-timer{
+        height:800px !important;
+        margin-top: -70px;
+        padding: 124px 84px;
+        background: url(../projectImages/timer-bg.jpg) no-repeat center center/cover;
       }

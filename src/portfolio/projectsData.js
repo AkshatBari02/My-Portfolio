@@ -1,34 +1,40 @@
 import React from "react";
 
-const ProjectData=[
-    {   
-        route:"/timer",
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"Time's Up"
-    },
-    {
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"Student Record"
-    },
-    {
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"Shopping Item Card"
-    },
-    {
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"FlexStart"
-    },
-    {
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"Food Responsive  Webpage"
-    },
-    {
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"Qumash World"
-    },
-    {
-        img:require(`./projects/projectImages/countdown.png`),
-        title:"On4Movies"
-    },
-]
+const ProjectData = [
+  {
+    route: "/timer",
+    img: require(`./projects/projectImages/countdown.png`),
+    title: "Your Time's Up",
+  },
+  {
+    route: "/weatherApp",
+    img: require(`./projects/projectImages/weather.jpg`),
+    title: "How's Weather",
+  },
+  {
+    route: "/productCard",
+    img: require(`./projects/projectImages/t-shirt.jpg`),
+    title: "Product Card",
+  },
+  {
+    route: "/flexstart",
+    img: require(`./projects/projectImages/FlexStart.jpg`),
+    title: "FlexStart",
+  },
+  {
+    route: "/responsiveFoodWebpage",
+    img: require(`./projects/projectImages/food.jpg`),
+    title: "Food Responsive Webpage",
+  },
+  {
+    route: "/timer",
+    img: require(`./projects/projectImages/qumash logo.png`),
+    title: "Qumash World",
+  },
+  {
+    route: "/timer",
+    img: require(`./projects/projectImages/On4movies.png`),
+    title: "On4Movies ",
+  },
+];
 export default ProjectData;

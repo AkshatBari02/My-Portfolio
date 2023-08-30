@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import DrawerAppBar from "./NavComp";
+import "./aboutcomp.css";
 
 function AboutComp() {
   const [text, setText] = useState("");
@@ -21,17 +23,20 @@ function AboutComp() {
   }, []);
 
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ padding: "96px", paddingRight: "30px" }} className="typewriter">
-        <h1 style={{ color: "red" }}>About Me</h1>
-        <p style={{ color: "white", fontFamily: "cursive", fontSize: "18px" }}>{text}</p>
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", padding: "44px 100px", paddingLeft: "44px" }}>
-        <div style={{ position: "sticky", top: 0 }}>
-          <img src={require(`./portfolio images/about.jpeg`)} alt="" style={{ height: "450px", width: "450px", borderRadius: "10px" }} />
+    <>
+      <DrawerAppBar />
+      <div className="about-content">
+        <div className="typewriter">
+          <h1>About Me</h1>
+          <p className="about-p">{text}</p>
+        </div>
+        <div className="about-img-container">
+          <div className="about-img">
+            <img src={require(`./portfolio images/about.jpeg`)} alt="" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

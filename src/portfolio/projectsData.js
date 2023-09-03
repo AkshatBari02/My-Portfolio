@@ -27,7 +27,7 @@ const ProjectData = [
     title: "Food Responsive Webpage",
   },
   {
-    route: "/timer",
+    route: "https://qumash-world.onrender.com",
     img: require(`./projects/projectImages/qumash logo.png`),
     title: "Qumash World",
   },

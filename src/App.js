@@ -24,8 +24,8 @@ function App() {
           <Route path="/productCard" element={<ProductCard />}></Route>
           <Route path="/weatherApp" element={<WeatherApp />}></Route>
           <Route path="/flexstart" element={<FlexStart />}></Route>
-          <Route path="/responsiveFoodWebpage" element={<FoodWebpage />}
-          ></Route>
+          <Route path="/responsiveFoodWebpage" element={<FoodWebpage />}></Route>
+          <Route path="https://qumash-world.onrender.com"></Route>
         </Routes>
       </BrowserRouter>
     </div>

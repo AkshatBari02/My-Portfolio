@@ -74,6 +74,7 @@
     padding-top: 62px;
     position: relative; /* Add this to create a stacking context */
     z-index: 1; /* Raise the stacking context */
+    padding-left: 37px;
 }
 .clock-circle{    
     background-color: brown;

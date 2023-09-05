@@ -26,6 +26,7 @@ function App() {
           <Route path="/flexstart" element={<FlexStart />}></Route>
           <Route path="/responsiveFoodWebpage" element={<FoodWebpage />}></Route>
           <Route path="https://qumash-world.onrender.com"></Route>
+          <Route path="https://akshatbari02.github.io/Amplify/"></Route>
         </Routes>
       </BrowserRouter>
     </div>

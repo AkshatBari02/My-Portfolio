@@ -27,14 +27,15 @@ const ProjectData = [
     title: "Food Responsive Webpage",
   },
   {
+    route: "https://akshatbari02.github.io/Amplify/",
+    img: require(`./projects/projectImages/Amplify.jpg`),
+    title: "Amplify:It's Your Music ",
+  },
+  {
     route: "https://qumash-world.onrender.com",
     img: require(`./projects/projectImages/qumash logo.png`),
     title: "Qumash World",
   },
-  {
-    route: "/timer",
-    img: require(`./projects/projectImages/On4movies.png`),
-    title: "On4Movies ",
-  },
+  
 ];
 export default ProjectData;

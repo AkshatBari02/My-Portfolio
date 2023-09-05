@@ -1,0 +1,31 @@
+.project-content{
+  margin-top: -112px;
+    padding: 100px 84px;
+    background: url(../portfolio/portfolio\ images/bg-1.jpeg) no-repeat center center/cover;
+}
+.project-btn{
+    font-size:smaller !important; 
+    color:primary
+  }
+  .project-btn:hover{
+    transform: scale(1.01);
+    /* color: primary !important; */
+    color: blue!important;
+    background-color: white !important;
+    color:black !important;
+  }
+  .project-link{
+    text-decoration: none;
+  }
+  .project-heading{
+    color:darkgoldenrod;
+    text-align:center;
+    font-size:45px;
+    font-family:cursive;
+  }
+  .project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:-20px;
+  }

@@ -1,0 +1,107 @@
+
+.clock-container{
+    padding: 34px 41px;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: bisque;
+    border: 8px solid coral;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    margin: -6% 37%;
+    box-shadow: 10px 15px 15px gray;
+}
+.clock-btn-p:hover{
+    background-color: blue !important;
+    color: white !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+.clock-hand{
+    width: 10px;
+    height: 150px;
+    margin-top: -37%;
+    /* margin-left: 45%; */
+    background-color: red;
+}
+#clockDisplayTime{
+    padding: 0px 93px;
+    margin-top: -7px;
+}
+.clock-h1{
+    padding: 0px 55px;
+}
+.clock-tik{
+    width: 10px;
+    height: 169px;
+    margin: 57px 112px;
+    animation-name: timing;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: top;
+    z-index: -1;
+}
+@keyframes timing{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.clock-txt{
+    margin-top: -227px;
+}
+.clock-txt-h2{
+    padding: 0px 91px;
+}
+.clock-btn{
+    margin-left: 52px;
+    position: relative !important;
+}
+.clock-btn-p{
+    padding: 4px;
+    border-radius: 8px;
+}
+.clock-emoji{
+    padding: 0px 90px;
+    font-size: 58px;
+}
+.clock-top{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 62px;
+    position: relative; /* Add this to create a stacking context */
+    z-index: 1; /* Raise the stacking context */
+    padding-left: 37px;
+}
+.clock-circle{    
+    background-color: brown;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 0px 2vw;
+    position: relative;
+    /* z-index: -1; */
+    border: 8px solid white;
+    animation-name: ears;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes ears{
+        0% {border: 5px solid #39f;}
+        15% {border:5px solid #8bc5d1;}
+        30% {border:5px solid #f8cb4a;}
+        45% {border:5px solid #95b850;}
+        60% {border:5px solid #944893;}
+        75% {border:5px solid #c71f00;}
+        90% {border:5px solid #bdb280;}
+        100%{border:5px solid #39f;}
+    }
+    .clock-timer{
+        height:800px !important;
+        margin-top: -70px;
+        padding: 124px 84px;
+        background: url(../projectImages/timer-bg.jpg) no-repeat center center/cover;
+      }
